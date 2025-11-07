@@ -15,41 +15,49 @@ public class GeometriHesap {
     
     // METOT 1: Kare alani
     public static double calculateSquareArea(double side) {
+        // Alan = kenar * kenar
         return side * side;
     }
     
     // METOT 2: Kare cevresi
     public static double calculateSquarePerimeter(double side) {
+        // Cevre = 4 * kenar
         return 4 * side;
     }
     
     // METOT 3: Dikdortgen alani
     public static double calculateRectangleArea(double width, double height) {
+        // Alan = genislik * yukseklik
         return width * height;
     }
     
     // METOT 4: Dikdortgen cevresi
     public static double calculateRectanglePerimeter(double width, double height) {
+        // Cevre = 2 * (genislik + yukseklik)
         return 2 * (width + height);
     }
     
     // METOT 5: Daire alani
     public static double calculateCircleArea(double radius) {
+        // Alan = PI * r * r
         return Math.PI * radius * radius;
     }
     
     // METOT 6: Daire cevresi
     public static double calculateCircleCircumference(double radius) {
+        // Cevre = 2 * PI * r
         return 2 * Math.PI * radius;
     }
     
     // METOT 7: Ucgen alani (taban ve yukseklik ile)
     public static double calculateTriangleArea(double base, double height) {
+        // Alan = (taban * yukseklik) / 2
         return (base * height) / 2;
     }
     
     // METOT 8: Ucgen cevresi
     public static double calculateTrianglePerimeter(double a, double b, double c) {
+        // Cevre = a + b + c
         return a + b + c;
     }
     
@@ -128,4 +136,3 @@ public class GeometriHesap {
         input.close();
     }
 }
-
